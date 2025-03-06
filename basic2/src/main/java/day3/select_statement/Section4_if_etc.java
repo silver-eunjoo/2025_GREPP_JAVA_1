@@ -12,7 +12,7 @@ public class Section4_if_etc {
         fn4();
     }
 
-    private static void fn4() {
+    public static void fn4() {
 
         if(returnTrue() && returnTrue()) {
             System.out.println("[Case1] 평가 완료!");
