@@ -25,7 +25,7 @@ public class Section1_if {
         System.out.println(5);
 
 //        if (true) System.out.println("result:true");
-        
+
 
     }
 }
