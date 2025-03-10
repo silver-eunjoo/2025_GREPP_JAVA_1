@@ -1,4 +1,4 @@
-package day4.encapsulation;
+package day4.desc.encapsulation;
 
 public class Encapsulation {
     private String name;

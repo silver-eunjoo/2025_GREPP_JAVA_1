@@ -1,4 +1,4 @@
-package day4.encapsulation;
+package day4.desc.encapsulation;
 
 public class EncTests {
     public static void main(String[] args) {
