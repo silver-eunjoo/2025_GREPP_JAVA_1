@@ -1,4 +1,4 @@
-package lec1;
+package day2.lec1;
 
 public class Lecture5 {
 

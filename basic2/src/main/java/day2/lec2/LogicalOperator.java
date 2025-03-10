@@ -1,4 +1,4 @@
-package lec2;
+package day2.lec2;
 
 public class LogicalOperator {
     public static void main(String[] args) {

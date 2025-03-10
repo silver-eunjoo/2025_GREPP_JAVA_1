@@ -1,4 +1,4 @@
-package lec2;
+package day2.lec2;
 
 public class ConditionalOperator {
     public static void main(String[] args) {
