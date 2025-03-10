@@ -1,8 +1,8 @@
 package day4.extends_example.final_keyword.s2;
 
-import day4.extends_example.final_keyword.s2.inner.FinalMethod;
+import day4.extends_example.final_keyword.s2.inner.FinalMethodParameter;
 
-public class FinalMethodImpl implements FinalMethod {
+public class FinalMethodParameterImpl implements FinalMethodParameter {
 
     @Override
     public void method1() {
@@ -23,7 +23,7 @@ public class FinalMethodImpl implements FinalMethod {
     }
 
     @Override
-    public void method4(int a, int b) { // 다시 final을 붙여줘도 된다. 
+    public void method4(int a, int b) { // 다시 final을 붙여줘도 된다.
 
     }
 }
