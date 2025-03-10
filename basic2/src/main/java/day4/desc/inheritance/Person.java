@@ -1,4 +1,4 @@
-package day4.inheritance;
+package day4.desc.inheritance;
 
 public class Person {
     public String name;

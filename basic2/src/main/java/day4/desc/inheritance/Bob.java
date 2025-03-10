@@ -1,4 +1,4 @@
-package day4.inheritance;
+package day4.desc.inheritance;
 
 public class Bob extends Person {
 

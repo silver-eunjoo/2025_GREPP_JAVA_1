@@ -1,4 +1,4 @@
-package day4.abstraction;
+package day4.desc.abstraction;
 
 public class Benz extends Car {
 
