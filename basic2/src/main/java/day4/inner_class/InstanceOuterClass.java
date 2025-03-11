@@ -24,6 +24,7 @@ public class InstanceOuterClass {
             System.out.println("sharedValue = " + sharedValue);
             System.out.println("defaultValue = " + defaultValue);
 //            System.out.println("duplicatedName = " + duplicatedName); //this가 자동으로 붙기 때문에 2가 출력됨.
+
         }
 
         public void printDuplicatedValue() {
@@ -33,7 +34,6 @@ public class InstanceOuterClass {
 
             System.out.println("innerVariable = " + innerVariable);
             System.out.println("outerValue = " + outerValue);
-
         }
     }
     

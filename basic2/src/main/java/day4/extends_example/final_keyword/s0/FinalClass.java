@@ -1,4 +1,4 @@
-package day4.extends_example.final_keyword.s0.inner;
+package day4.extends_example.final_keyword.s0;
 
 // 최종본 너낌
 public class FinalClass { // final class는 상속할 수 없다.
