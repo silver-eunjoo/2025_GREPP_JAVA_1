@@ -7,12 +7,12 @@ import day4.objects.inner.MemberV3;
 public class IdentityAndEquality {
 
     public static void main(String[] args) {
-        test1();
-        test2();
-        test3();
-        test4();
+//        test1();
+//        test2();
+//        test3();
+//        test4();
         test5();
-        test6();
+//        test6();
     }
 
     private static void test6() {

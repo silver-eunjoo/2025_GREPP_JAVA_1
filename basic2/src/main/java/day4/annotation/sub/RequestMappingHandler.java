@@ -10,7 +10,6 @@ public class RequestMappingHandler {
 
         Request request = new Request();
 
-
         ViewResolver viewResolver = new ViewResolver();
         MockController mockController = new MockController();
 
@@ -18,9 +17,9 @@ public class RequestMappingHandler {
 
         Method[] methods = mockControllerClass.getMethods();
 
-        for(Method method : methods) {
-            if(method.isAnnotationPresent(GetMapping.class)) {
-                String templateTarget = method.invoke(mockController).toString(); //어떤 클래스에 있는 메소드를 호출할 거냐
+        for(Method method : methods) { // MockController라는 클래스에 있는 모든 메소드 반복문
+            if(method.isAnnotationPresent(GetMapping.class)) { // 메소드에 GetMapping이라는 클래스가 있다면
+                String templateTarget = method.invoke(mockController).toString(); //어떤 클래스에 있는 메소드를 호출할 거냐 index 반환
                 String templatePath = viewResolver.getTemplatePath(templateTarget);
                 request.templatePath = templatePath;
                 request.targetPath = templateTarget;

@@ -27,7 +27,7 @@ public class StaticInnerClassTests {
         innerClass1.b = 30;
         innerClass2.b = 50;
 
-        System.out.println("innerClass1 = " + innerClass1.b);
+        System.out.println("innerClass1.b = " + innerClass1.b);
         System.out.println("innerClass2.b = " + innerClass2.b);
         // static에 있는 인스턴스변수라고 해서 정적변수처럼 행동하지 않는다.
     }
@@ -39,10 +39,6 @@ public class StaticInnerClassTests {
 //        Integer innerPublicStaticValue = StaticOuterClass.InnerClass.innerPublicStaticValue;
         StaticOuterClass.InnerClass innerClass = new StaticOuterClass.InnerClass();
         // 외부 클래스에 있는 static 내부 클래스의 생성자를 호출하고 New
-
-
-
-
     }
 
 }

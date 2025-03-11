@@ -69,6 +69,7 @@ public class Comparing {
 
     private static void test4() {
 
+        System.out.println("Comparing.test4");
         List<Character> userGuild = makeGuild(3);
 
         System.out.println("userGuild = " + userGuild);
@@ -93,7 +94,7 @@ public class Comparing {
     }
 
     private static void test3() {
-
+        System.out.println("Comparing.test3");
         int PARTY_SIZE = 5;
 
         List<CharacterCompare> raidParty = makeParty(PARTY_SIZE);
