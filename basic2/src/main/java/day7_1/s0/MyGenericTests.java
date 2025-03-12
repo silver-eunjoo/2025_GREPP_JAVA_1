@@ -26,7 +26,6 @@ public class MyGenericTests {
         // 제네릭은 타입이 정해져있지 않기 때문에 NULL을 포함할 수 있어야 한다.
         // 그러므로, 기본 자료형이 아니라 참조 자료형을 사용해야 한다.
 
-
     }
 
     private static void test2() {
