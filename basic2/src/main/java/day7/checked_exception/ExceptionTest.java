@@ -3,8 +3,10 @@ package day7.checked_exception;
 public class ExceptionTest {
     public static void main(String[] args) {
 
-        int result = test3();
-        System.out.println(result);
+        System.out.println("hello");
+//
+//        int result = test3();
+//        System.out.println(result);
 
 //        try {
 //            test1(); // runtime exception -> catch에서 제일 먼저 걸리는 것에 들어감.
