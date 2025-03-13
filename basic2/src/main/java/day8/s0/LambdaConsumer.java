@@ -49,12 +49,12 @@ public class LambdaConsumer {
     private static void test2() {
         List<String> germanFriends = Arrays.asList("David", "Jacob", "Paul", "Christopher", "Geza");
 
-//        sayHello(germanFriends, new Hello<String>() {
-//            @Override
-//            public void accept(String value) {
-//                System.out.println(value);
-//            }
-//        });
+        sayHello(germanFriends, new Hello<String>() {
+            @Override
+            public void accept(String value) {
+                System.out.println(value);
+            }
+        });
         sayHello(germanFriends, (s) -> {
             System.out.println(s);
         });
@@ -63,7 +63,7 @@ public class LambdaConsumer {
 
     static void sayHello(List<String> list, Hello<String> hello) {
         for (String s : list) { // iter
-            hello.accept(s);
+            hello.accept(s); // hello 의 accept라는 함수를 아직 정의해주지 않았다.
         }
     }
 

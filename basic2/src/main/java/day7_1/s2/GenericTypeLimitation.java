@@ -26,10 +26,10 @@ public class GenericTypeLimitation {
 
     static class GenericWrapper {
 
-        static void method1(Clazz<? extends C> a) {
+        static void method1(Clazz<? extends C> a) { // ? <=C
 
         }
-        static void method2(Clazz<? super C> a) {
+        static void method2(Clazz<? super C> a) { // ? >= C
 
         }
 

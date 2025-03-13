@@ -30,7 +30,7 @@ public class Factory {
         HugeGrinder hugeGrinder = new HugeGrinder();
         ToolBox<HugeGrinder> hugeGrinderToolBox = new ToolBox<HugeGrinder>(hugeGrinder);
 
-        grinderPackager.close(hugeGrinderToolBox);
+        grinderPackager.close(hugeGrinderToolBox); // grinderPackager이 HugeGrinder를 T 제네릭 타입으로 가지고 있기 때문에 얘는 닫을 수 있다.
 //        grinderPackager.close(hammerToolBox); Packager grinderPackager 만들 때 T가 정해졌기 때문에 hugeGrinder만 닫을 수 있다.
 
 

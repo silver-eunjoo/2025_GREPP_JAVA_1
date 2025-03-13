@@ -5,7 +5,6 @@ import java.util.List;
 
 public class MvcRequestMatchers {
 
-    private List<MvcRequestMatchers> requestMatchers = new ArrayList<>();
     // url 패턴 "/posts/1" -> MEMBER
     // "/admin/index" -> ADMIN
     private String path;
