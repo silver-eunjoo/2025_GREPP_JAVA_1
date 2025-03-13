@@ -4,6 +4,7 @@ import day7_1.s3.box.Box;
 import day7_1.s3.box.InstallableToolBox;
 import day7_1.s3.box.PortableToolBox;
 import day7_1.s3.box.ToolBox;
+import day7_1.s3.component.Packager;
 import day7_1.s3.other.Apple;
 import day7_1.s3.tools.Tool;
 import day7_1.s3.tools.portable.Hammer;
@@ -17,6 +18,31 @@ public class Factory {
         test1();
         test2();
         test3();
+        test4();
+    }
+
+    private static void test4() {
+        Packager<HugeGrinder> grinderPackager = new Packager<>(); // hugeGrinder box만 가능하다.
+
+        Hammer hammer = new Hammer();
+        ToolBox<Hammer> hammerToolBox = new ToolBox<>(hammer);
+
+        HugeGrinder hugeGrinder = new HugeGrinder();
+        ToolBox<HugeGrinder> hugeGrinderToolBox = new ToolBox<HugeGrinder>(hugeGrinder);
+
+        grinderPackager.close(hugeGrinderToolBox);
+//        grinderPackager.close(hammerToolBox); Packager grinderPackager 만들 때 T가 정해졌기 때문에 hugeGrinder만 닫을 수 있다.
+
+
+        Packager.closeBox(hammerToolBox); // 얘는 static method로서 와일드카드를 썼기 때문에 가능하다.
+
+        HugeCrowbar hugeCrowbar = new HugeCrowbar();
+        ToolBox<HugeCrowbar> crowbarToolBox = new ToolBox<>(hugeCrowbar);
+
+//        Packager.closePortableBox(crowbarToolBox); portable이 아니니까 불가능
+        Packager.closeInstallableBox(crowbarToolBox);
+        Packager.closeBox(crowbarToolBox);
+
     }
 
     private static void test3() {
